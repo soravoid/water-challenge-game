@@ -6,7 +6,7 @@ define one = Character("Volunteer 1")
 define two = Character ("Volunteer 2")
 
 label aboriginal_main:
-  scene bg school 
+  scene aboriginal school outside 
   "Jonathan is a highschool student from Sydney, Australia who has come to Walgett to help with an elementary school's renovations"
   "After they arrive at the school, Jonathan and the other volunteers notice that the classroom is mostly empty"
   "They ask the teacher about where the kids are..."
@@ -36,5 +36,5 @@ label aboriginal_main:
   show Jonathan
   j "Sure!"
 
-  scene bg river
+  scene aboriginal dried river
 
