@@ -231,21 +231,25 @@ label uruguay_main:
 
   call question_menu
 
+  sil normal "Thank you so much for your time! This information will greatly clarify much of what's happening."
 
+  scene uruguay office
+
+  "After the interview, Silvia returns to her office, feeling inspired by the expert's insights. She starts typing furiously, eager to share the information she has gathered and thinking about her sick son."
   return
 
 label question_menu:
   menu:
     sil "What other questions should I ask the expert??"
 
+    "What are El Niño and La Niña?":
+      jump expert_nino_nina
+
     "What are some ways we can make water less salty?":
       jump expert_first_question
 
     "How can we save more water to reduce our waste?":
       jump expert_second_question
-
-    "What are El Niño and La Niña?":
-      jump expert_nino_nina
 
     "I am done.":
       return
@@ -293,6 +297,8 @@ label expert_nino_nina:
   show enso at top
 
   exp "In fact, here's a short animation that shows temperature changes due to El Niño and La Niña from NASA!"
+
+  exp "The red and blue correspond to hot and cold respectively. We can see El Niño as a strip of heat and La Niña as the strip of cold. "
 
   hide enso
 
