@@ -1,7 +1,7 @@
 # Placeholder first line
 
 define sil = Character("Silvia", image="silvia")
-define sam = Character("Sam", image="samuel")
+define sam = Character("Samuel", image="samuel")
 define hec = Character("Héctor", image="hector")
 define rad = Character("Radio")
 define exp = Character("Expert")
@@ -27,9 +27,9 @@ label uruguay_main:
 
   sam normal "{size=+40} BLEH!!!" with vpunch
 
-  sam normal "The water tasted terrible today!"
+  sam "The water tasted terrible today!"
 
-  sam normal "Brushing my teeth was like drinking pool water!"
+  sam "Brushing my teeth was like drinking pool water!"
 
   sil normal "Don't overexaggerate, honey."
   sil "Come on now, you’re going to make both of us late this morning."
@@ -139,7 +139,11 @@ label uruguay_main:
 
   sil normal "We're going to get through this, honey. I promise."
 
+  scene uruguay house outside with fade
+
   "The next day..."
+
+  scene uruguay house kitchen
 
   sil normal "Honey, are you going to be okay with samuel?"
 
