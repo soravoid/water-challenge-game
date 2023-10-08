@@ -11,7 +11,7 @@ define co2 = Character("Coworker 2")
 label uruguay_main:
   scene uruguay house outside  
 
-  "Silvia is a journalist for a local news station in Uruguay, a country in South America. She lives with her husband, Héctor, and her 6-year-old son, sam normaluel."
+  "Silvia is a journalist for a local news station in Uruguay, a country in South America. She lives with her husband, Héctor, and her 6-year-old son, Samuel."
 
   scene uruguay house kitchen
 
@@ -23,7 +23,7 @@ label uruguay_main:
 
   hec normal "No my dear, I haven’t touched anything"
 
-  # TODO Silvia pours her coffee down the drain with a frown on her face. Her son, sam normaluel, enters the room with a frown on his face.
+  # TODO Silvia pours her coffee down the drain with a frown on her face. Her son, samuel, enters the room with a frown on his face.
 
   sam normal "{size=+40} BLEH!!!" with vpunch
 
@@ -35,7 +35,7 @@ label uruguay_main:
   sil "Come on now, you’re going to make both of us late this morning."
   sil "Bye, sweetie!"
 
-  # TODO Silvia drives off with sam normaluel while Héctor waves them goodbye. Silvia turns on the radio to fill the silence.
+  # TODO Silvia drives off with samuel while Héctor waves them goodbye. Silvia turns on the radio to fill the silence.
   scene car driving 1
   
   rad "…three years of drought have plagued Uruguay."
@@ -103,13 +103,13 @@ label uruguay_main:
 
   scene uruguay outside school
 
-  "It was time to pick up sam normaluel, but something was terribly wrong…"
+  "It was time to pick up samuel, but something was terribly wrong…"
 
   sil normal "He should be here by now. What’s taking him so long?"
 
-  # TODO sam normaluel gets in Silvia’s car, face pale
+  # TODO samuel gets in Silvia’s car, face pale
   
-  sil normal "sam normaluel, sweetie, you don't look well. What happened at school today?"
+  sil normal "Samuel, sweetie, you don't look well. What happened at school today?"
 
   sam normal "Mommy, I don't feel so good. My throat hurts, and I'm really thirsty."
 
@@ -119,7 +119,7 @@ label uruguay_main:
 
   scene uruguay house couch
 
-  # TODO Silvia takes sam normaluel home from school. Samuel is laying on the couch with a towel on his head.
+  # TODO Silvia takes samuel home from school. Samuel is laying on the couch with a towel on his head.
 
   sil normal "Are you feeling any better, honey?"
 
@@ -135,13 +135,13 @@ label uruguay_main:
 
   sam normal "Okay, Mommy..."
 
-  # TODO Silvia goes to the kitchen to get sam normaluel the bottled water she had bought earlier. Silvia sits down on the couch next to Samuel and puts her arm around him.
+  # TODO Silvia goes to the kitchen to get samuel the bottled water she had bought earlier. Silvia sits down on the couch next to Samuel and puts her arm around him.
 
   sil normal "We're going to get through this, honey. I promise."
 
   "The next day..."
 
-  sil normal "Honey, are you going to be okay with sam normaluel?"
+  sil normal "Honey, are you going to be okay with samuel?"
 
   hec normal "Yes, sweetheart, don't worry about me!"
 
