@@ -1,32 +1,36 @@
 ﻿# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene watercycle
 
-    scene bg room
+    "Everything starts with water. But how do we use water, and how does it move around from place to place?"
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    scene evap
 
-    show eileen happy
+    "Beginning with evaporation, the sun heats up bodies of water and turns them into little water droplets that stay in the air and rise into the sky."
 
-    # These display lines of dialogue.
+    scene condense
 
-    e "You've created a new Ren'Py game."
+    "The temperature in the sky is cooler than on Earth, so the water droplets condense into clouds that we can see in the sky."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    scene precip
+
+    "When the clouds get too heavy, the water is released through rain or snow which is also known as precipitations."
+
+    scene watercycle
+
+    "The water then goes back to the bodies of water and the cycle begins again."
+
+    "This cycle has gone on for millions of years on Earth. It is essential for maintaining the planet's environment, ensuring that all forms of life have access to fresh water, and regulating our climate."
+
+    scene watercross
+
+    "While water is essential for our hydration, it is also essential to our food, our power, and our health. Water is what makes life possible, yet it does so differently in different communities."
+
+    "Let take a look at how water can affect those living in India!"
 
     # This ends the game.
 
