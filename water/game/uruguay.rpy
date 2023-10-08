@@ -1,5 +1,47 @@
 # Placeholder first line
 
+image paso_severino = Image("paso severino satellite.png")
+
+image enso:
+  "enso/frame_01.jpg"
+  pause 0.2
+  "enso/frame_02.jpg"
+  pause 0.2
+  "enso/frame_03.jpg"
+  pause 0.2
+  "enso/frame_04.jpg"
+  pause 0.2
+  "enso/frame_05.jpg"
+  pause 0.2
+  "enso/frame_06.jpg"
+  pause 0.2
+  "enso/frame_07.jpg"
+  pause 0.2
+  "enso/frame_08.jpg"
+  pause 0.2
+  "enso/frame_09.jpg"
+  pause 0.2
+  "enso/frame_10.jpg"
+  pause 0.2
+  "enso/frame_11.jpg"
+  pause 0.2
+  "enso/frame_12.jpg"
+  pause 0.2
+  "enso/frame_13.jpg"
+  pause 0.2
+  "enso/frame_14.jpg"
+  pause 0.2
+  "enso/frame_15.jpg"
+  pause 0.2
+  "enso/frame_16.jpg"
+  pause 0.2
+  "enso/frame_17.jpg"
+  pause 0.2
+  "enso/frame_18.jpg"
+  pause 0.2
+  "enso/frame_19.jpg"
+  repeat
+
 define sil = Character("Silvia", image="silvia")
 define sam = Character("Samuel", image="samuel")
 define hec = Character("Héctor", image="hector")
@@ -80,7 +122,7 @@ label uruguay_main:
 
   co1 "Silvia! Thank goodness you're here. We're in the middle of a big story."
 
-  co2 "Yeah, the Paso Severino reservoir is drying up."
+  co2 "Yeah, the Paso Severino resevoir reservoir is drying up."
   co2 "The government is about to start adding water from the Plata River to the water supply, but it's salty."
 
   sil normal "It's already happened! My coffee was way too salty this morning."
@@ -156,5 +198,104 @@ label uruguay_main:
   scene uruguay office
 
   "At work that day, Silvia is interviewing an environmental scientist to explore potential solutions to the ongoing water crisis."
+
+  scene uruguay interview
+
+  sil normal "Thank you for agreeing to this interview today."
+
+  exp "The pleasure's mine!"
+
+  sil normal "Let's get started! What do you think caused these past three years of drought?"
+
+  exp "That is a very difficult question, as the climate and weather patterns are very chaotic systems."
+
+  exp "However, several factors can contribute to prolonged droughts. Climate change, which affects weather patterns, has been a significant factor."
+
+  exp "In fact, look at these satellite images of the Paso Severino resevoir!"
+
+  show paso_severino
+
+  exp "The left image is from June 2022 and the right is from June 2023 recorded by the NASA OLI telescope."
+
+  exp "The Paso Severino resevoir has dried up considerably over the past year, which contributes to the current water crisis."
+
+  hide paso_severino
+
+  exp "Being aware and proactive about observing these patterns will allow us to prevent future situations like we are in now."
+  
+  sil normal "Wow! These pictures are super shocking to me! More attention should be brought to data like this!"
+
+  exp "Presenting scientific data to the public is a difficult task,"
+
+  exp "and with an effective presentation, hopefully more people are inspired to take action."
+
+  call question_menu
+
+
+  return
+
+label question_menu:
+  menu:
+    sil "What other questions should I ask the expert??"
+
+    "What are some ways we can make water less salty?":
+      jump expert_first_question
+
+    "How can we save more water to reduce our waste?":
+      jump expert_second_question
+
+    "What are El Niño and La Niña?":
+      jump expert_nino_nina
+
+    "I am done.":
+      return
+
+label expert_first_question:
+
+  exp "What an excellent question! This is the first solution many people have researched."
+
+  exp "The method to do so is called \"desalination,\" and there are two main ways to carry out this process."
+
+  exp "The first is to evaporate the water so it leaves all the salt behind. We can collect the water vapor and condense it, giving us not-salty water."
+
+  exp "We can also desalinate the water by using a filter that only lets water molecules through and not salt molecules."
+
+  exp "Both of these methods are incredibly expensive and energy intensive, so we are still looking for more affordable ways to provide clean water."
+
+  jump question_menu
+
+  return
+
+label expert_second_question:
+
+  exp "Household leaks, from pipes, taps, or other areas, tend to be a surprising source of water waste."
+
+  exp "Taking the time to fix these problems can be a great first step!"
+
+  exp "Taking care of your gardens could also be a source of water waste."
+
+  exp "Try watering during the cooler parts of the day to reduce water loss due to evaporation."
+
+  exp "By incorporating these simple changes into our daily lives, we can contribute to water conservation in Uruguay to ensure everyone can have access to clean water."
+
+  jump question_menu
+
+  return
+
+label expert_nino_nina:
+
+  exp "El Niño is a phenomenon that affects weather all over the world! It consists of unusual warming of surface waters in the eastern tropical Pacific Ocean." 
+
+  exp "It is part of a larger phenomenon called the El Niño-Southern Oscillation (ENSO), which also describes La Niña, the cold version of El Niño."
+
+  exp "These phenomena has a significant impact on ocean temperatures, currents, fisheries, and weather patterns around the world"
+  
+  show enso at top
+
+  exp "In fact, here's a short animation that shows temperature changes due to El Niño and La Niña from NASA!"
+
+  hide enso
+
+  jump question_menu
 
   return
