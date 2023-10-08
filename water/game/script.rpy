@@ -30,23 +30,26 @@ label start:
 
     "While water is essential for our hydration, it is also essential to our food, our power, and our health. Water is what makes life possible, yet it does so differently in different communities."
 
+    "What happens when clean water is scarce? In fact, in Uruguay..."
+
+    call uruguay_main
+
     "Let take a look at how water can affect those living in India!"
 
-    # call india_main
+    call india_main
 
     # TODO change this transition
     # TODO NEED SCENE HERE?
     # scene
     # "Let's look at Uruguay"
 
-    # call uruguay_main
 
     # TODO change this transition
     # TODO NEED SCENE HERE?
     # scene
     # "Let's look at the Aboriginals, an indigenous community in Australia"
 
-    # call aboriginal_main
+    call aboriginal_main
     
     # TODO Implement ending of the game
     # scene
