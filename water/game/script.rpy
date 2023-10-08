@@ -32,23 +32,25 @@ label start:
 
     "Let take a look at how water can affect those living in India!"
 
-    call india_main
+    # call india_main
 
     # TODO change this transition
     # TODO NEED SCENE HERE?
-    "Let's look at Uruguay"
+    # scene
+    # "Let's look at Uruguay"
 
-    call uruguay_main
+    # call uruguay_main
 
     # TODO change this transition
     # TODO NEED SCENE HERE?
-    "Let's look at the Aboriginals, an indigenous community in Australia"
+    # scene
+    # "Let's look at the Aboriginals, an indigenous community in Australia"
 
-    call aboriginal_main
+    # call aboriginal_main
     
     # TODO Implement ending of the game
-    scene
-    "Ending placeholder"
+    # scene
+    # "Ending placeholder"
 
     # This ends the game.
 
